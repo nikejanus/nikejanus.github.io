@@ -1,0 +1,36 @@
+/* app.css */
+body {
+    /* rgb */
+    color: rgb(22,33,12)
+}
+/* footer */
+
+.footer {
+    background-color: #112233;
+}
+
+.container {
+
+}
+
+.row {
+
+}
+
+.col {
+
+}
+
+.text-white {
+    color: white;
+}
+/* 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+ul {
+    list-style: none;
+}
+.reset-anchor {
+    color: #fafafa;
+    text-decoration: none;
+    
+}
+
