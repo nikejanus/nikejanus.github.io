@@ -2,6 +2,10 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif; 
     font-size:1rem;
@@ -9,11 +13,14 @@ body{
     line-height:1.5;
     color:#212529;
     background-color:#fff;
+    margin: 0;
 }
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
     font-weight:700;
-    line-height:1.2
+    line-height:1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
 
 h6,.h6{
@@ -73,6 +80,7 @@ h6,.h6{
 }
 
 .list-inline-item{
+    display: inline-block;
 }
 
 /* nav */
@@ -106,7 +114,10 @@ h6,.h6{
     background:#dee2e6;
     color:#212529;
     font-size:0.75rem;
-    text-decoration:none
+    text-decoration:none;
+    width: 34px;
+    height: 34px;
+    display: block;
 }
 
 img {
@@ -126,6 +137,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover !important;
+    padding: 2rem 0 1rem;
 }
 
 .divider {
@@ -141,4 +153,19 @@ img {
     rgb(50, 85, 50) 75%,
     rgb(5, 50, 0) 95%
     );
+}
+
+.container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.col-4 {
+    display: inline-block;
+    width: 33%;
+}
+
+.border-top {
+    border-top: #212529 3px solid;
 }
