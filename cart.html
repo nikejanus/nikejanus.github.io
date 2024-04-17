@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop.io | Bootstrap 5 E-commerce</title>
+    <meta charset="utf-8">
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    
+    <!-- Google fonts-->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&amp;display=swap"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/app.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-light bg-white">
+      <div class="container">
+        <!-- Navbar brand-->
+        <a class="navbar-brand" href="index.html">brand</a>
+        
+        <!-- Navbar toggler-->
+        
+        <!-- Navbar collapse-->
+        <div class="collapse navbar-wrapper">
+          <!-- Navbar menu left-->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-uppercase active" href="index.html">Home</a></li>
+            
+            <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
+          </ul>
+          <!-- Navbar menu right-->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-uppercase fas fa-dolly-flatbed" href="cart.html"></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase far fa-heart" href="wishlist"></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase far fa-user" href="login.html"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="cart-wrapper">
+
+            <div class="cart-header">
+                <h3>Shopping cart</h3>
+            </div>
+
+            <div class="cart-content">
+
+                <table class="table">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="images/product-5.jpg" width="40" alt="Product1 name"> Product1 name</a></td>
+                            <td>123</td>
+                            <td>2</td>
+                            <td>246</td>
+                            <td><a class="reset-anchor remove" href="#!">
+                                <i class="fas fa-trash-alt"></i>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="images/product-5.jpg" width="40" alt="Product1 name"> Product1 name</a></td>
+                            <td>123</td>
+                            <td>2</td>
+                            <td>246</td>
+                            <td><a class="reset-anchor remove" href="#!">
+                                <i class="fas fa-trash-alt"></i>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="images/product-5.jpg" width="40" alt="Product1 name"> Product1 name</a></td>
+                            <td>123</td>
+                            <td>2</td>
+                            <td>246</td>
+                            <td><a class="reset-anchor remove" href="#!">
+                                <i class="fas fa-trash-alt"></i>
+                            </a></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-4">
+              <h6 class="text-white">Menu</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
+                <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
+                <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
+                <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h6 class="text-white">Checkout</h6>
+              <ul class="list-unstyled text-muted">
+                <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
+                <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
+                <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
+                <li class="mb-2"> <a class="reset-anchor" href="#">Wishlist</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+              <p class="text-muted">1 Дивовижна, Київ, Україна</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="social-icon" href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+        </div>
+        <div class="container">
+          <div class="border border-top" style="border-color: #1d1d1d !important">
+            <div class="row">
+              <div class="col">
+                <p class="small text-muted">© 2024 All rights reserved.</p>
+              </div>
+              <div class="col">
+                <p class="small text-muted">Template designed by <a class="text-white reset-anchor" href="#">Shop.io</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  

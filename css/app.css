@@ -169,3 +169,49 @@ img {
 .border-top {
     border-top: #212529 3px solid;
 }
+/* rgba(2, 2, 2, 0.2)  */
+.bg-light {
+    background-color: rgb(2 2 2 / 0.2); 
+}
+
+.table {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-collapse: collapse;
+    display: table;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-style: solid;
+    border-width: 0;
+    border-color: inherit;
+}
+
+.table thead {
+    vertical-align: bottom;
+}
+
+.table th {
+    padding: 1rem 0;
+    color: rgb(161, 160, 170);
+    font-weight: 700;
+    text-align: left;
+}
+
+.table tr {
+    display: table-row;
+}
+
+.table td {
+    padding: .5rem 0;
+    display: table-cell;
+}
+
+.table td .remove{
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    color: red;
+}
