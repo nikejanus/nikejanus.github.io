@@ -42,7 +42,7 @@ h6,.h6{
 }
 
 .hero-heading{
-    font-size:4rem
+    font-size:2rem
 }
 
 .reset-anchor{
@@ -137,7 +137,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover !important;
-    padding: 2rem 0 1rem;
+    padding: 12rem 0;
 }
 
 .divider {
@@ -153,17 +153,6 @@ img {
     rgb(50, 85, 50) 75%,
     rgb(5, 50, 0) 95%
     );
-}
-
-.container {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.col-4 {
-    display: inline-block;
-    width: 33%;
 }
 
 .border-top {
@@ -214,4 +203,46 @@ thead, tbody, tfoot, tr, td, th {
     height: 28px;
     padding: 6px;
     color: red;
+}
+
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    clear: both;
+}
+
+
+.col-4 {
+    /* display: inline-block; */
+    width: calc((100% / 12) * 4);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+hr {
+    margin: 1rem 0;
+    border: 0;
+    opacity: .2;
+    clear: both;
 }
