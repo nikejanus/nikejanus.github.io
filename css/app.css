@@ -130,14 +130,14 @@ img {
 }
 
 .product {
-    width: 250px;
+    width: 13rem;
 }
 
 .hero, .divider {
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover !important;
-    padding: 12rem 0;
+    padding: 2rem 0;
 }
 
 .divider {
@@ -210,6 +210,7 @@ thead, tbody, tfoot, tr, td, th {
 .container {
     width: 100%;
     margin: 0 auto;
+    padding: 3rem;
 
     /* padding-left: 2rem;
     padding-right: 2rem; */
@@ -218,18 +219,12 @@ thead, tbody, tfoot, tr, td, th {
 .row {
     width: 100%;
     margin: 0;
-    clear: both;
+    /* clear: both; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
 }
 
-
-.col-4 {
-    /* display: inline-block; */
-    width: calc((100% / 12) * 4);
-}
-
-.col-6 {
-    width: calc((100% / 12) * 6);
-}
 
 .float-left {
     float: left;
@@ -245,4 +240,30 @@ hr {
     border: 0;
     opacity: .2;
     clear: both;
+}
+
+.catalog {
+    flex: 4;
+}
+
+.sidebar {
+    flex: .5;
+}
+
+.col-3 {
+    /* display: inline-block; */
+    width: calc((100% / 12) * 3);
+    flex: 0 1 auto;
+}
+
+
+.col-4 {
+    /* display: inline-block; */
+    width: calc((100% / 12) * 4);
+    flex: 0 1 auto;
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+    flex: 1;
 }
