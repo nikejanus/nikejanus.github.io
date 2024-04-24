@@ -31,6 +31,9 @@ h6,.h6{
 .text-center{
     text-align:center !important
 }
+.text-right {
+    text-align: right;
+}
 
 .text-uppercase {
     text-transform:uppercase !important;
@@ -73,6 +76,7 @@ h6,.h6{
 
 .list-unstyled{
     list-style:none;
+    padding: 0;
 }
 
 .list-inline{
@@ -85,6 +89,20 @@ h6,.h6{
 
 /* nav */
 
+.navbar {
+    padding: .5rem 5%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-wrapper {
+    display: flex;
+}
+
 .navbar-brand{
     font-size:1.25rem;
     text-decoration:none;
@@ -93,6 +111,11 @@ h6,.h6{
 
 .navbar-nav{
     list-style:none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .navbar-nav .nav-link{
@@ -101,6 +124,9 @@ h6,.h6{
     text-decoration: none;
 }
 
+.nav-item{
+    margin-right: 1rem;
+}
 .navbar-nav .nav-link.active{
     color:#4650dd;
     font-weight:700
@@ -223,6 +249,7 @@ thead, tbody, tfoot, tr, td, th {
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
+    justify-content: space-around;
 }
 
 
@@ -244,10 +271,12 @@ hr {
 
 .catalog {
     flex: 4;
+    order: 1;
 }
 
 .sidebar {
     flex: .5;
+    order: 2;
 }
 
 .col-3 {
@@ -259,7 +288,7 @@ hr {
 
 .col-4 {
     /* display: inline-block; */
-    width: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
     flex: 0 1 auto;
 }
 
