@@ -20,6 +20,9 @@
       <div class="container">
         <!-- Navbar brand-->
         <a class="navbar-brand" href="index.html">brand</a>
+
+        <label for="toggler" class="fas fa-bars"></label>
+        <input type="checkbox" id="toggler">
         
         <!-- Navbar toggler-->
         
@@ -44,6 +47,57 @@
       </div>
     </nav>
 <!-- hero -->
+
+<main>
+  <div class="container">
+
+    <header class="text-center">
+      <h1>Contact us</h1>
+    </header>
+    <form action="/contact" class="form" method="get">
+
+      <div class="form-container">
+        <div class="input-group">
+          <div>
+            <label for="firstname">*Your first name:</label>
+            <input id="firstname" name="first_name" class="form-control" required />
+          </div>
+          <div>
+            <label for="lastname">*Your last name:</label>
+            <input id="lastname" name="last_name" type="text"  class="form-control" required />
+        </div>
+
+        </div>
+        <div class="input-group">
+          <div>
+            <label for="email">*Your email:</label>
+            <input id="email" name="email" class="form-control" placeholder="Enter your email here" required type="email" />
+          </div>
+          <div>
+            <label for="phone">Your phone number:</label>
+            <input id="phone" name="phone" type="tel"  class="form-control" />
+        </div>
+
+        </div>
+        <div class="input-group">
+          <label for="phone">Your city:</label>
+          <select class="form-control">
+            <option>Choose...</option>
+            <option>Lviv</option>
+            <option>Kyiv</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="phone">Your message:</label>
+          <textarea  class="form-control" placeholder="Drop Your message for us here" required rows="4"></textarea>
+        </div>
+        <div class="input-group">
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
 <footer class="bg-dark">
     <div class="container">
       <div class="row">

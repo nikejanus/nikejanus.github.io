@@ -339,3 +339,48 @@ hr {
         order: 2;
     }
 }
+
+.form {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-group div {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    background-color: #f8f9fa;
+    border: 1px solid gray;
+}
+
+@media (min-width: 760px) {
+    .input-group div {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+}
+
+#toggler, .navbar label {
+    display: none;
+}
+
+@media (max-width:45rem) {
+    .navbar label {
+        display: inline-block;
+    }
+}
