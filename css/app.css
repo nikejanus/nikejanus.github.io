@@ -2,6 +2,19 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
+:root {
+    --anchor-color: indigo;
+    --anchor-light-color: white;
+    --anchor-active-color: indigo;
+    --background-color: salmon;
+    --currency-symbol: "\20B4";
+}
+
+section #hero {
+    --btn-color: white;
+    --btn-background: salmon;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -425,9 +438,12 @@ hr {
     position: absolute;
     top: 2rem;
     right:1rem;
-    /* z-index: -10; */
+    z-index: -10;
 }
 
+.product:hover .icons {
+    z-index: 10;
+}
 
 .product .icons a{
     display: block;
@@ -440,4 +456,56 @@ hr {
     text-align: center;
     background-color: #fff;
     color: #111;
+}
+
+.product .icons a:hover {
+    color: var(--anchor-light-color);
+    background-color: var(--background-color);
+}
+
+.btn {
+    background-color: var(--btn-background);
+    color: var(--btn-color);
+    padding: .5rem 1.5rem;
+}
+
+.categories {
+    padding: 0;
+    list-style: none;
+}
+
+
+.categories li {
+    text-align: start;
+    padding: 0;
+}
+
+.categories li a {
+    text-decoration: none;
+    color: var(--anchor-color);
+    display: block;
+    width: 100%;
+    padding: .3rem 2rem;
+
+}
+
+.categories li a:hover {
+    background-color: salmon;
+    color: #fff;
+}
+
+.categories li:nth-child(2n-1) {
+    background-color: lightgray;
+}
+
+
+.price {
+    color: salmon !important;
+    font-weight: 700;
+}
+
+.price::before {
+    color: salmon;
+    font-weight: 700;
+    content: var(--currency-symbol);
 }
