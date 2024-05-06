@@ -445,6 +445,14 @@ hr {
     z-index: 10;
 }
 
+.product:hover img{
+    /* transform: scale(1.2); */
+    /* transform: rotate(45deg) */
+    transform: scaleX(-1);
+    filter: contrast(150%);
+    transition: .3s linear;
+}
+
 .product .icons a{
     display: block;
     width: 2.5rem;
@@ -461,12 +469,6 @@ hr {
 .product .icons a:hover {
     color: var(--anchor-light-color);
     background-color: var(--background-color);
-}
-
-.btn {
-    background-color: var(--btn-background);
-    color: var(--btn-color);
-    padding: .5rem 1.5rem;
 }
 
 .categories {
@@ -508,4 +510,81 @@ hr {
     color: salmon;
     font-weight: 700;
     content: var(--currency-symbol);
+}
+
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    border-top:#6c757d 1px solid;
+    padding-top: 1.25rem;
+}
+
+.social-list li {
+    margin: .5rem;
+
+}
+.social-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.social-list a:hover {
+    transition: cubic-bezier(0.23, 1, 0.320, 1) .3s;
+    transform: scale(1.2);
+    color: salmon;
+}
+
+.navbar-nav a{
+    position: relative;
+}
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid salmon;
+    transition: .4s;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    /* background-color: var(--btn-background);
+    color: var(--btn-color);
+    padding: .5rem 1.5rem; */
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+}
+
+
+.btn-insert {
+    width: 30%;
+    margin: 5px;
+    color: salmon;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid salmon;
+    border-radius: 30px;
+    box-shadow:  0 0 0 0 salmon inset;
+    padding-left: 20px;
+
+}
+
+.btn-insert:hover {
+    color: white;
+    box-shadow:  300px 0 0 0 salmon inset;
 }
